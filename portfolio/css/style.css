@@ -1,0 +1,330 @@
+:root {
+    --light-green: #b6d7a8ff;
+    --middle-green: #8db580ff;
+    --dark-green: #768d6fff;
+    --purple: #d2c8ffff;
+    --lilac: #efc0ffff;
+    --pink: #ffd9eaff;
+    --orange: #ffc695ff;
+    --yellow: #ffe599ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-green);
+    margin-left: -2px;
+    font-family: 'Josefin Sans';
+}
+
+/*header*/
+header img {
+    width: 100%;
+    top: 0px;
+    height: 450px;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+}
+
+nav a {
+    font-family: 'Amatic SC';
+    font-size: 38px;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: relative;
+    top: -120px;
+}
+
+.left {
+    float: left;
+    margin-left: 50px;
+    display: block;
+}
+
+.leftmobile {
+    display: none;
+}
+
+.right {
+    float: right;
+    margin-right: 50px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(126, 137, 135, 0.9);
+}
+
+/*main*/
+main {
+    margin-top: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.textblock {
+    font-size: 20px;
+}
+
+p {
+    padding: 50px;
+}
+
+.line {
+    background-color: var(--dark-green);
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-family: 'Amatic SC';
+    color: var(--dark-green);
+    text-align: center;
+}
+
+#topblock {
+    background-color: var(--purple);
+}
+
+
+/*over mij*/
+.overmij {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#imgyv {
+    border: var(--dark-green) solid 5px;
+    border-radius: 50px;
+    width: 25%;
+    height: 350px;
+    object-fit: cover;
+    float: left;
+}
+
+#overmijtxt {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--lilac);
+}
+
+.mail {
+    background-color: var(--yellow);
+    width: 25%;
+    height: 350px;
+    border-radius: 50px;
+    border: var(--yellow) solid 5px;
+    float: right;
+    text-align: center;
+}
+
+.mail a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+#mailicon {
+    width: 126px;
+    height: 81.5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*mijnwerk*/
+
+.mwb {
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.vrijwi {
+    background-color: var(--pink);
+}
+
+.stage {
+    background-color: var(--yellow);
+}
+
+.school {
+    background-color: var(--purple);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mijnwerk {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.projectimg {
+    width: 50%;
+    border: var(--dark-green) solid 5px;
+}
+
+.sclprojectimg {
+    width: 50%;
+    border: var(--dark-green) solid 5px;
+}
+
+
+/*icons*/
+
+.icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.icons img {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icontxt {
+    text-align: center;
+    background-color: var(--dark-green);
+    color: white;
+}
+
+/*footer*/
+footer {
+    background-color: var(--middle-green);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+footer a {
+    text-align: center;
+    color: black;
+}
+
+/*smaller sscreens*/
+@media screen and (max-width: 1200px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        position: relative;
+        top: 400px;
+        z-index: 1;
+        /* background-color: red; */
+    }
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(126, 137, 135, 0.9);
+    }
+
+    .left {
+        display: none;
+    }
+
+    .leftmobile {
+        display: block;
+        float: left;
+        margin-left: 20px;
+        /* width: 20%; */
+    }
+
+    .right {
+        float: right;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    .overmij {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    #imgyv {
+        width: 100%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    #overmijtxt {
+        width: 100%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .mail {
+        width: 100%;
+        height: 400px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .school {
+        background-color: var(--purple);
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .sclprojectimg {
+        width: 100%;
+    }
+
+    .projectimg {
+        width: 100%;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .icons img {
+        height: 80px;
+    }
+
+    /* nav {
+        position: relative;
+        top: -150px;
+    } */
+
+    footer {
+        width: 102%;
+    }
+
+}
